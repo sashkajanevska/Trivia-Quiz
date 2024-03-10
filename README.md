@@ -1,1 +1,1 @@
-# js-lesson10
+# trivia_quiz
