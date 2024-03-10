@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Who wrote 'Pride and Prejudice'?",
+        "options": ["Jane Austen", "Emily Bronte", "Charlotte Bronte", "Louisa May Alcott"],
+        "answer": "Jane Austen"
+    },
+    {
+        "question": "Where is Mount Fuji located?",
+        "options": ["China", "Japan", "Peru", "South Korea"],
+        "answer": "Japan"
+    },
+    {
+        "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two different fields?",
+        "options": ["Marie Curie in Physics and Chemistry", "Bertha von Suttner for Peace and Literature", "Gerty Cori in Physiology or Medicine and Chemistry", "Dorothy Hodgkin in Chemistry and Physics"],
+        "answer": "Marie Curie in Physics and Chemistry"
+    },
+    {
+        "question": "Who painted 'Starry Night'?",
+        "options": ["Claude Monet", "Gustav Klimt", "Vincent Van Gogh", "Paul Cezanne"],
+        "answer": "Vincent Van Gogh"
+    },
+    {
+        "question": "What movie won the Academy Award for Best Picture in 2019?",
+        "options": ["Bohemian Rhapsody", "Green Book", "Roma", "A Star is Born"],
+        "answer": "Green Book"
+    },
+    {
+        "question": "What is the Latin name for dog?",
+        "options": ["Felis catus", "Canis lupus", "Canis lupus familiaris", "Equus caballus"],
+        "answer": "Canis lupus familiaris"
+    },
+    {
+        "question": "What element from the periodic table does P represent?",
+        "options": ["Platinum", "Promethium", "Phosphorus", "Polonium"],
+        "answer": "Phosphorus"
+    },
+    {
+        "question": "What's the name of the architect of Farnsworth House?",
+        "options": ["Frank Lloyd Wright", "Alvar Aalto", "Frank Gehry", "Mies van der Rohe"],
+        "answer": "Mies van der Rohe"
+    },
+    {
+        "question": "The song 'We Are the World' by Michael Jackson and Lionel Richie was written for?",
+        "options": ["Raising awareness for saving the Earth ", "Political campaign", "A collaborative album", "Raising money for the people who suffered from famine in Africa"],
+        "answer": "Raising money for the people who suffered from famine in Africa"
+    },
+    {
+        "question": "What is the origin country of croissants?",
+        "options": ["France", "Austria", "Italy", "Germany"],
+        "answer": "Austria"
+    }
+]

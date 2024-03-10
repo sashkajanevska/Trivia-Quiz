@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trivia Quiz</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="trivia-quiz-inner">
+                <div class="trivia-quiz-image">
+                    <img src="images/trivia_img.jpg" alt="trivia">
+                </div>
+
+                <div class="trivia-quiz-start">
+                    <h1>Trivia Quiz</h1>
+                    <button id="start" class="start-button"><a href="#question-box">Start</a></button>
+                </div>
+
+                <div id="question-box" class="trivia-quiz-content">
+                    
+                    <div class="content-inner">
+                        <div class="question-header">
+                            <p id="question-num"></p>
+                            <p id="counter"></p>
+                        </div>
+                        <div id="question" class="question-main"></div>
+                        <div id="next-button" class="next-button"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
