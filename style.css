@@ -8,6 +8,7 @@ body {
     margin-top: 0px;
     margin-bottom: 30px;
     background-color: hsla(192, 100%, 95%, 0.15);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -144,6 +145,7 @@ input[type="radio"] {
 
 .question-main label {
     display: flex;
+    align-items: center;
     background-color: hsla(123, 49%, 41%, 0.4);
     border-top: 1px solid #359c3a;
     padding: 15px 15px 15px 30px;   
