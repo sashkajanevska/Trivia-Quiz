@@ -11,7 +11,7 @@
     },
     {
         "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two different fields?",
-        "options": ["Marie Curie in Physics and Chemistry", "Bertha von Suttner for Peace and Literature", "Gerty Cori in Physiology or Medicine and Chemistry", "Dorothy Hodgkin in Chemistry and Physics"],
+        "options": ["Marie Curie in Physics and Chemistry", "Bertha von Suttner for Peace and Literature", "Gerty Cori in Physiology/Medicine and Chemistry", "Dorothy Hodgkin in Chemistry and Physics"],
         "answer": "Marie Curie in Physics and Chemistry"
     },
     {
@@ -40,8 +40,8 @@
         "answer": "Mies van der Rohe"
     },
     {
-        "question": "The song 'We Are the World' by Michael Jackson and Lionel Richie was written for?",
-        "options": ["Raising awareness for saving the Earth ", "Political campaign", "A collaborative album", "Raising money for the people who suffered from famine in Africa"],
+        "question": "The song 'We Are the World' by Michael Jackson and Lionel Richie was written ..?",
+        "options": ["To raise awareness for saving the Earth ", "For a Political campaign", "For a collaborative album", "To raise money for the people who suffered from famine in Africa"],
         "answer": "Raising money for the people who suffered from famine in Africa"
     },
     {
