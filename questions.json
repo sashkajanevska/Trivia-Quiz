@@ -41,8 +41,8 @@
     },
     {
         "question": "The song 'We Are the World' by Michael Jackson and Lionel Richie was written ..?",
-        "options": ["To raise awareness for saving the Earth ", "For a Political campaign", "For a collaborative album", "To raise money for the people who suffered from famine in Africa"],
-        "answer": "Raising money for the people who suffered from famine in Africa"
+        "options": ["To raise awareness for saving the Earth ", "For a political campaign", "For a collaborative album", "To raise money for the people who suffered from famine in Africa"],
+        "answer": "To raise money for the people who suffered from famine in Africa"
     },
     {
         "question": "What is the origin country of croissants?",
