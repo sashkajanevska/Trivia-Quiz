@@ -21,7 +21,6 @@ const questionNum = document.getElementById('question-num');
 let index = 0;
 let count = 0;
 
-
 function displayQuestion(index) {
 
     if (trivia[index] === undefined) {
@@ -59,7 +58,6 @@ function displayQuestion(index) {
     questionNum.textContent = `Question: ${index + 1} of ${trivia.length}`;
 };
 
-
 function startGame() {
 
     questionElement.innerHTML = '';
@@ -73,7 +71,6 @@ function startGame() {
     nextButton.addEventListener('click', handleNextQuestion);
     nextElement.appendChild(nextButton);
 };
-
 
 function handleNextQuestion() {
 
@@ -89,11 +86,9 @@ function handleNextQuestion() {
     }
 };
 
-
 function displayQuestionElement() {
     document.getElementById('question-box').style.display = 'block';
 };
-
 
 startButton.addEventListener('click', () => {
     displayQuestionElement();
