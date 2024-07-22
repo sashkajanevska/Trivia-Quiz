@@ -10,7 +10,7 @@ let index = 0;
 let count = 0;
 
 function fetchTrivia() {
-  fetch("./quesions.json")
+  fetch("./questions.json")
     .then((res) => res.json())
     .then((data) => (trivia = data))
     .catch((error) => {
