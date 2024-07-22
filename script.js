@@ -1,96 +1,93 @@
-/*
-    Trivia Quiz Game:
-    Develop a trivia quiz game where users can answer multiple-choice questions. 
-    The questions and answers can be stored in an array of objects, and the game 
-    should keep track of the user's score.
-*/
-// Create an array of objects containing trivia questions, correct answer, possible answers
-// Display the questions and possible answers
-// Handle on click user input, check the selected answer against the correct answer
-// Update the user score
+const startButton = document.getElementById("startBtn");
+const questionElement = document.getElementById("question");
+const buttonWrapper = document.getElementById("buttonBox");
+const counter = document.getElementById("counter");
+const questionNum = document.getElementById("questionNum");
+const questionWrapper = document.getElementById("questionBox");
 
-
-import trivia from './questions.json' assert {type: 'json'};
-// console.log(trivia);
-
-const startButton = document.getElementById('start');
-const questionElement = document.getElementById('question');
-const nextElement = document.getElementById('next-button');
-const counter = document.getElementById('counter');
-const questionNum = document.getElementById('question-num');
+let trivia = null;
 let index = 0;
 let count = 0;
 
+function fetchTrivia() {
+  fetch("./quesions.json")
+    .then((res) => res.json())
+    .then((data) => (trivia = data))
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
 function displayQuestion(index) {
-
-    if (trivia[index] === undefined) {
-        nextElement.innerHTML = '';
-        counter.textContent = `Score: ${count}/${trivia.length}`;
-        questionElement.innerHTML = 
-            `<span><img src="images/owl_logo.png">
-            <br>Congrats! You've completed the Trivia Quiz game.
-            <br>${counter.textContent} correct answers</span>
-            <span>Click <span>Start</span> to play again</span>`
-
-        return questionElement;
-    };
-
-    const p = document.createElement('p');
-    p.textContent = `${trivia[index].question}`;
-    questionElement.appendChild(p);
-
-    for (let i = 0; i < trivia[index].options.length; i++) {
-        const input = document.createElement('input');
-        input.type = 'radio';
-        input.name = 'option';
-        input.id = i;
-        input.value = trivia[index].options[i];
-
-        const label = document.createElement('label');
-        label.textContent = input.value;
-        label.htmlFor = i;
-
-        questionElement.appendChild(input);
-        questionElement.appendChild(label);
-    };
-
+  if (trivia[index] === undefined) {
+    buttonWrapper.innerHTML = "";
     counter.textContent = `Score: ${count}/${trivia.length}`;
-    questionNum.textContent = `Question: ${index + 1} of ${trivia.length}`;
-};
+    questionElement.innerHTML = `<div class="quiz-score"><img src="images/owl_logo.png">
+            <br>Congrats! You've completed the Trivia Quiz game.
+            <br><span>${counter.textContent} correct answers</span></div>
+            <div class="quiz-end">Click <span>Start</span> to play again</div>`;
+
+    return questionElement;
+  }
+
+  const question = document.createElement("p");
+  question.textContent = `${trivia[index].question}`;
+  questionElement.appendChild(question);
+
+  for (let i = 0; i < trivia[index].options.length; i++) {
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = "option";
+    input.id = i;
+    input.value = trivia[index].options[i];
+
+    const label = document.createElement("label");
+    const option = document.createElement("p");
+    option.textContent = input.value;
+    label.appendChild(option);
+    label.htmlFor = i;
+
+    questionElement.appendChild(input);
+    questionElement.appendChild(label);
+  }
+
+  counter.textContent = `Score: ${count}/${trivia.length}`;
+  questionNum.textContent = `Question: ${index + 1} of ${trivia.length}`;
+}
 
 function startGame() {
+  questionElement.innerHTML = "";
+  buttonWrapper.innerHTML = "";
+  index = 0;
+  count = 0;
+  displayQuestion(index);
 
-    questionElement.innerHTML = '';
-    nextElement.innerHTML = '';
-    index = 0;
-    count = 0;
-    displayQuestion(index);
+  const nextButton = document.createElement("button");
+  nextButton.textContent = "Next";
+  nextButton.addEventListener("click", handleNextQuestion);
+  buttonWrapper.appendChild(nextButton);
 
-    const nextButton = document.createElement('button');
-    nextButton.textContent = '➡';
-    nextButton.addEventListener('click', handleNextQuestion);
-    nextElement.appendChild(nextButton);
-};
+  questionWrapper.classList.add("active");
+}
 
 function handleNextQuestion() {
+  const input = document.querySelector('input[name="option"]:checked');
+  if (input.value === trivia[index].answer) {
+    count++;
+  }
 
-    const input = document.querySelector('input[name="option"]:checked');
-    if (input.value === trivia[index].answer) {
-        count++;
-    };
+  questionElement.innerHTML = "";
+  if (index <= trivia.length - 1) {
+    index++;
+    return displayQuestion(index);
+  }
+}
 
-    questionElement.innerHTML = '';
-    if (index <= trivia.length - 1) {
-        index++;
-        return displayQuestion(index)
-    }
-};
-
-function displayQuestionElement() {
-    document.getElementById('question-box').style.display = 'block';
-};
-
-startButton.addEventListener('click', () => {
-    displayQuestionElement();
-    startGame();
+startButton.addEventListener("click", () => {
+  startGame();
+  setTimeout(() => {
+    questionWrapper.scrollIntoView({ behavior: "smooth" });
+  }, 150);
 });
+
+fetchTrivia();

@@ -10,9 +10,9 @@
         "answer": "Japan"
     },
     {
-        "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two different fields?",
-        "options": ["Marie Curie in Physics and Chemistry", "Bertha von Suttner for Peace and Literature", "Gerty Cori in Physiology/Medicine and Chemistry", "Dorothy Hodgkin in Chemistry and Physics"],
-        "answer": "Marie Curie in Physics and Chemistry"
+        "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two separate fields (Physics and Chemistry)?",
+        "options": ["Marie Curie", "Bertha von Suttner", "Gerty Cori", "Dorothy Hodgkin"],
+        "answer": "Marie Curie"
     },
     {
         "question": "Who painted 'Starry Night'?",
@@ -40,9 +40,9 @@
         "answer": "Mies van der Rohe"
     },
     {
-        "question": "The song 'We Are the World' by Michael Jackson and Lionel Richie was written ..?",
-        "options": ["To raise awareness for saving the Earth ", "For a political campaign", "For a collaborative album", "To raise money for the people who suffered from famine in Africa"],
-        "answer": "To raise money for the people who suffered from famine in Africa"
+        "question": "What was ABBA's first number one hit?",
+        "options": ["Dancing Queen ", "S.O.S", "Chiquitita", "Waterloo"],
+        "answer": "Waterloo"
     },
     {
         "question": "What is the origin country of croissants?",
