@@ -1,22 +1,14 @@
+import getQuestions from "./getQuestions.js";
+
 const startButton = document.getElementById("startBtn");
 const questionElement = document.getElementById("question");
 const buttonWrapper = document.getElementById("buttonBox");
 const counter = document.getElementById("counter");
 const questionNum = document.getElementById("questionNum");
 const questionWrapper = document.getElementById("questionBox");
-
 let trivia = null;
 let index = 0;
 let count = 0;
-
-function fetchTrivia() {
-  fetch("./questions.json")
-    .then((res) => res.json())
-    .then((data) => (trivia = data))
-    .catch((error) => {
-      console.error(error);
-    });
-}
 
 function displayQuestion(index) {
   if (trivia[index] === undefined) {
@@ -58,9 +50,14 @@ function displayQuestion(index) {
 function startGame() {
   questionElement.innerHTML = "";
   buttonWrapper.innerHTML = "";
+  trivia = null;
   index = 0;
   count = 0;
-  displayQuestion(index);
+
+  getQuestions().then((data) => {
+    trivia = data;
+    displayQuestion(index);
+  });
 
   const nextButton = document.createElement("button");
   nextButton.textContent = "Next";
@@ -72,6 +69,7 @@ function startGame() {
 
 function handleNextQuestion() {
   const input = document.querySelector('input[name="option"]:checked');
+  if (!input) return;
   if (input.value === trivia[index].answer) {
     count++;
   }
@@ -89,5 +87,3 @@ startButton.addEventListener("click", () => {
     questionWrapper.scrollIntoView({ behavior: "smooth" });
   }, 150);
 });
-
-fetchTrivia();

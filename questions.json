@@ -1,52 +1,304 @@
-[
-    {
-        "question": "Who wrote 'Pride and Prejudice'?",
-        "options": ["Jane Austen", "Emily Bronte", "Charlotte Bronte", "Louisa May Alcott"],
-        "answer": "Jane Austen"
-    },
-    {
-        "question": "Where is Mount Fuji located?",
-        "options": ["China", "Japan", "Peru", "South Korea"],
-        "answer": "Japan"
-    },
-    {
-        "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two separate fields (Physics and Chemistry)?",
-        "options": ["Marie Curie", "Bertha von Suttner", "Gerty Cori", "Dorothy Hodgkin"],
-        "answer": "Marie Curie"
-    },
-    {
-        "question": "Who painted 'Starry Night'?",
-        "options": ["Claude Monet", "Gustav Klimt", "Vincent Van Gogh", "Paul Cezanne"],
-        "answer": "Vincent Van Gogh"
-    },
-    {
-        "question": "What movie won the Academy Award for Best Picture in 2019?",
-        "options": ["Bohemian Rhapsody", "Green Book", "Roma", "A Star is Born"],
-        "answer": "Green Book"
-    },
-    {
-        "question": "What is the Latin name for dog?",
-        "options": ["Felis catus", "Canis lupus", "Canis lupus familiaris", "Equus caballus"],
-        "answer": "Canis lupus familiaris"
-    },
-    {
-        "question": "What element from the periodic table does P represent?",
-        "options": ["Platinum", "Promethium", "Phosphorus", "Polonium"],
-        "answer": "Phosphorus"
-    },
-    {
-        "question": "What's the name of the architect of Farnsworth House?",
-        "options": ["Frank Lloyd Wright", "Alvar Aalto", "Frank Gehry", "Mies van der Rohe"],
-        "answer": "Mies van der Rohe"
-    },
-    {
-        "question": "What was ABBA's first number one hit?",
-        "options": ["Dancing Queen ", "S.O.S", "Chiquitita", "Waterloo"],
-        "answer": "Waterloo"
-    },
-    {
-        "question": "What is the origin country of croissants?",
-        "options": ["France", "Austria", "Italy", "Germany"],
-        "answer": "Austria"
-    }
-]
+{
+    "questions": [
+        {
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "options": [
+                "Jane Austen",
+                "Emily Bronte",
+                "Charlotte Bronte",
+                "Louisa May Alcott"
+            ],
+            "answer": "Jane Austen"
+        },
+        {
+            "question": "Where is Mount Fuji located?",
+            "options": [
+                "China",
+                "Japan",
+                "Peru",
+                "South Korea"
+            ],
+            "answer": "Japan"
+        },
+        {
+            "question": "Who is the first woman to ever win a Nobel Prize and the only person who has won in two separate fields (Physics and Chemistry)?",
+            "options": [
+                "Marie Curie",
+                "Bertha von Suttner",
+                "Gerty Cori",
+                "Dorothy Hodgkin"
+            ],
+            "answer": "Marie Curie"
+        },
+        {
+            "question": "Who painted 'Starry Night'?",
+            "options": [
+                "Claude Monet",
+                "Vincent Van Gogh",
+                "Gustav Klimt",
+                "Paul Cezanne"
+            ],
+            "answer": "Vincent Van Gogh"
+        },
+        {
+            "question": "Which film won Best Picture at the 2019 Academy Awards?",
+            "options": [
+                "Bohemian Rhapsody",
+                "Green Book",
+                "Roma",
+                "A Star is Born"
+            ],
+            "answer": "Green Book"
+        },
+        {
+            "question": "What is the Latin name for dog?",
+            "options": [
+                "Felis catus",
+                "Canis lupus",
+                "Canis lupus familiaris",
+                "Equus caballus"
+            ],
+            "answer": "Canis lupus familiaris"
+        },
+        {
+            "question": "What element from the periodic table does P represent?",
+            "options": [
+                "Platinum",
+                "Promethium",
+                "Phosphorus",
+                "Polonium"
+            ],
+            "answer": "Phosphorus"
+        },
+        {
+            "question": "What's the name of the architect of Farnsworth House?",
+            "options": [
+                "Frank Lloyd Wright",
+                "Alvar Aalto",
+                "Frank Gehry",
+                "Mies van der Rohe"
+            ],
+            "answer": "Mies van der Rohe"
+        },
+        {
+            "question": "Which of the following options was ABBA's first number one hit?",
+            "options": [
+                "Dancing Queen ",
+                "S.O.S",
+                "Chiquitita",
+                "Waterloo"
+            ],
+            "answer": "Waterloo"
+        },
+        {
+            "question": "Where does the croissant originate from?",
+            "options": [
+                "France",
+                "Austria",
+                "Italy",
+                "Germany"
+            ],
+            "answer": "Austria"
+        },
+        {
+            "question": "Which organ is responsible for producing insulin?",
+            "options": [
+                "Thyroid",
+                "Pancreas",
+                "Liver",
+                "Stomach"
+            ],
+            "answer": "Pancreas"
+        },
+        {
+            "question": "Who discovered the world's first antibiotic in 1923?",
+            "options": [
+                "Alexander Fleming",
+                "Louis Pasteur",
+                "Robert Fleming",
+                "Robert Koch"
+            ],
+            "answer": "Alexander Fleming"
+        },
+        {
+            "question": "Which city is the largest in Australia by area?",
+            "options": [
+                "Melbourne",
+                "Sydney",
+                "Brisbane",
+                "Canberra"
+            ],
+            "answer": "Brisbane"
+        },
+        {
+            "question": "Which continent on Earth is the driest?",
+            "options": [
+                "Antarctica",
+                "Asia",
+                "Australia",
+                "Africa"
+            ],
+            "answer": "Antarctica"
+        },
+        {
+            "question": "What is the name of the fifth film in the Harry Potter series? (Harry Potter and ...)",
+            "options": [
+                "the Half-Blood Prince",
+                "the Goblet of Fire",
+                "the Chamber of Secrets",
+                "the Order of the Phoenix"
+            ],
+            "answer": "the Order of the Phoenix"
+        },
+        {
+            "question": "Who is the creator of Vitruvian Man?",
+            "options": [
+                "Michelangelo Buonarroti",
+                "Raffaello Sanzio",
+                "Leonardo da Vinci",
+                "Donato di Niccolò"
+            ],
+            "answer": "Leonardo da Vinci"
+        },
+        {
+            "question": "What is the name of the architect behind the design of the Thermal Baths in Vals, Switzerland?",
+            "options": [
+                "Bernard Tschumi",
+                "Roger Diener",
+                "Peter Zumthor",
+                "Pierre de Meuron"
+            ],
+            "answer": "Peter Zumthor"
+        },
+        {
+            "question": "What type of galaxy is the Milky Way?",
+            "options": [
+                "Elliptical",
+                "Spiral",
+                "Lenticular",
+                "Irregular"
+            ],
+            "answer": "Spiral"
+        },
+        {
+            "question": "Which planet is orbited by a moon called Titan?",
+            "options": [
+                "Saturn",
+                "Venus",
+                "Jupiter",
+                "Mars"
+            ],
+            "answer": "Saturn"
+        },
+        {
+            "question": "What is the name of the first spacecraft to bring astronauts to the Moon?",
+            "options": [
+                "Gemini 4",
+                "Apollo 13",
+                "Columbia",
+                "Apollo 11"
+            ],
+            "answer": "Apollo 11"
+        },
+        {
+            "question": "What does the acronym URL stand for?",
+            "options": [
+                "User Resource Locator",
+                "Universal Routing Link",
+                "Unified Reference List",
+                "Uniform Resource Locator"
+            ],
+            "answer": "Uniform Resource Locator"
+        },
+        {
+            "question": "Which British computer scientist is widely credited with inventing the World Wide Web?",
+            "options": [
+                "Tim Berners-Lee",
+                "Alan Turing",
+                "Charles Babbage",
+                "Gordon Moore"
+            ],
+            "answer": "Tim Berners-Lee"
+        },
+        {
+            "question": "What was the first Pixar film to be released on Blu-ray?",
+            "options": [
+                "Cars",
+                "Finding Nemo",
+                "The Incredibles",
+                "Toy Story 2"
+            ],
+            "answer": "Cars"
+        },
+        {
+            "question": "What is the most-watched comedy series of all time according to IMDb?",
+            "options": [
+                "The Big Bang Theory",
+                "Friends",
+                "Ted Lasso",
+                "The Office"
+            ],
+            "answer": "Friends"
+        },
+        {
+            "question": "What year did the Wright brothers invent the first successful airplane?",
+            "options": [
+                "1912",
+                "1903",
+                "1896",
+                "1879"
+            ],
+            "answer": "1903"
+        },
+        {
+            "question": "Who was the first woman ever inducted into the Rock and Roll Hall of Fame?",
+            "options": [
+                "Tina Turner",
+                "Janis Joplin",
+                "Aretha Franklin",
+                "Madonna"
+            ],
+            "answer": "Aretha Franklin"
+        },
+        {
+            "question": "Which of the following musical terms indicates the slowest tempo?",
+            "options": [
+                "Allegro",
+                "Andante",
+                "Largo",
+                "Presto"
+            ],
+            "answer": "Largo"
+        },
+        {
+            "question": "When was the last time Sweden won the European Men's Handball Championship?",
+            "options": [
+                "2018",
+                "2024",
+                "2016",
+                "2022"
+            ],
+            "answer": "2022"
+        },
+        {
+            "question": "What is the national dish of South Korea?",
+            "options": [
+                "Kkanpunggi",
+                "Kimchi",
+                "Japchae",
+                "Gimbap"
+            ],
+            "answer": "Kimchi"
+        },
+        {
+            "question": "Which of the following languages does not belong to the Indo-European language family?",
+            "options": [
+                "Portuguese",
+                "Finnish",
+                "Bengali",
+                "Spanish"
+            ],
+            "answer": "Finnish"
+        }
+    ]
+}
